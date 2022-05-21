@@ -1,3 +1,12 @@
+let input = document.getElementById('input')
+let cifra = document.getElementById('cifra')
+let base64 = document.getElementById('base64')
+let codificar = document.getElementById('codificar')
+let decodificar = document.getElementById('decodificar')
+let chave = document.getElementById('chave')
+let botao = document.querySelector('button')
+
+
 function cifrar(mensagem,chave) {
     let mensagemArray = mensagem.split('')
     let mesagemCodificada = []

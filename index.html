@@ -4,14 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cifra.css">
+    <script src="cifra.js" defer></script>
     <title>Codificador</title>
 </head>
 <body>
-    <main>
-        <h1>Cifra de cesar.</h1>
-        <form id="codificador"autocomplete="off">
-        <input id="input-original"spellcheck="fase"placebolder="coloque o texo"name="text">
-        </form>
-    </main>
+    <div class="container">
+        <header>
+            <h1>Codifique sua mensagem!</h1>
+        </header>
+        <main>
+            <p>Escolha o seu método: </p>
+            <form >
+                <input type="radio" name="metodo" id="cifra" value="true">Cifra de César
+                <input type="radio" name="metodo" id="base64" value="true">Base 64
+            </form>
+            <p>Escreva sua mensagem: </p>
+            <input type="text" id="input">
+            <p>Escolha a numeração da chave: </p>
+            <input type="number" name="chave" id="chave" min="1">
+            <p>Escolha se quer codificar ou decodificar: </p>
+            <form >
+                <input type="radio" name="mensagem" id="codificar" value="true">Codificar
+                <input type="radio" name="mensagem" id="decodificar" value="true">Decodificar
+            </form>
+            <div class="retorno" id="retorno"></div>
+            <button>Enviar</button>
+        </main>
+        <footer>
+        
+            <p>Todos os direitos reservados</p>
+            <a href="https://github.com/LhaisCosta99"><p>Lhaís Costa 2022©</p></a>
+            
+        </footer>
+    </div>
 </body>
 </html>
